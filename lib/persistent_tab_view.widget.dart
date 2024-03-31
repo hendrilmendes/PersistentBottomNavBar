@@ -87,6 +87,7 @@ class PersistentTabView extends PersistentTabViewBase {
     required this.screens,
     final Key? key,
     this.controller,
+    final double navBarHeight = kBottomNavigationBarHeight,
     this.margin = EdgeInsets.zero,
     this.floatingActionButton,
     this.resizeToAvoidBottomInset = false,
@@ -127,6 +128,7 @@ class PersistentTabView extends PersistentTabViewBase {
           screenTransitionAnimation: screenTransitionAnimation,
           isCustomWidget: true,
           decoration: const NavBarDecoration(),
+          navBarHeight: navBarHeight,
         );
 
   ///Screens that will be displayed on tapping of persistent bottom navigation bar items.
