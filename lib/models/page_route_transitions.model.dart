@@ -71,7 +71,7 @@ Widget _scaleRotate(
                 CurvedAnimation(parent: animation, curve: Curves.linear)),
             child: child));
 
-class _AnimatedPageRoute extends PageRouteBuilder {
+class _AnimatedPageRoute extends PageRouteBuilder <dynamic>{
   _AnimatedPageRoute(
       {this.exitPage,
       this.enterPage,
